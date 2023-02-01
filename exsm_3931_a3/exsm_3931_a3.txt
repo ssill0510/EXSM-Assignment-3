@@ -1,0 +1,46 @@
+money = 10.00
+vending_machine_content = { pop: 3.00, chips: 2.00, gum: 1.00}
+vending_inventory = {pop: 10, chips: 10, gum: 20}
+change = 0
+choice = “”
+
+Look at choices and price
+Select choice
+If choice is not available, or if choice inventory is zero {
+    error message asking the customer to pick a new option
+    }
+Insert money 
+While money is less than cost {
+    insert more money
+}
+Gears turn to dispense item
+Customer picks up item
+If money inserted is more than cost {
+    return change to customer
+}
+Update vending_inventory 
+
+
+
+
+change = 100.00
+vending_machine_money = { toonies: 20.00, loonies: 50.00, quarters: 30.00}
+vending_inventory = {toonies: 10, loonies: 50, quarters: 120}
+change = 0
+choice = “”
+
+Look at stock and price
+Select stock
+If stock is not available, or if price of inventory is zero {
+    error message telling the customer item is out of stock
+}
+Money reader is empty
+While money counted {
+    calculate change
+}
+Fill the slots with stock
+Check any that may be malfunctioned
+If money inserted there is no stock {
+    return change to customer
+}
+Update vending_inventory 
